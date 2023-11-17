@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!--Estilo-->
+    <link rel="stylesheet" href="./src/css/estilo.css" type="text/css">
+    <!--Link for the icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CI Desarrollador</title>
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>CJ</h1>
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="select" onclick="seleccionar(this)">Home</a></li>
+                            <li><a href="#aboutme" onclick="seleccionar(this)">About me</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">Skills</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">Portafolio</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!--Iconos del menu responsive-->
+                    <div id="icon-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!--Icons for the social media-->
+                    <div id="redes">
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p>Bienvenidos</p>
+                <h2>Soy <span>Carlos Ipiales</span> Desarrollador</h2>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, libero doloremque temporibus repellendus nihil accusantium, repudiandae placeat adipisci deserunt nobis voluptas! Maxime distinctio aperiam, est eveniet laboriosam illum nihil atque.
+                </p>
+                <a href="#portafolio">Ir a portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!--Setion about me-->
+    <section id="aboutme">
+        <div class="contenedor-foto">
+            <img src="./src/img/foto.jpg" alt="">
+        </div>
+        <div class="aboutme">
+            <p class="titulo-seccion">Sobre mi</p>
+            <h2>Hola soy <span>Carlos Ipiales</span></h2>
+            <h3>Desarrolador</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias tenetur praesentium inventore, veritatis vel vero, nulla quos cupiditate, obcaecati eius molestias. Corrupti architecto minus dolore totam iusto libero quam nam!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae, recusandae! Molestiae suscipit ad, quam vel ex sed harum magni. Possimus provident nesciunt ipsum laudantium accusantium eveniet, eaque neque alias cum.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    <!--Skills section-->
+    <section class="contenedor-skills" id="skills">
+        <h3>Habilidades</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Html & Css</span></p>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Javascript</span></p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">Base de Datos</span></p>
+                <span class="porcentaje"> 50%</span>
+            </div>
+            <div class="barra">
+                <div id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista">React</span></p>
+                <span class="porcentaje"> 70%</span>
+            </div>
+            <div class="barra">
+                <div id="rt"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section portafolio-->
+
+    <section id="portafolio">
+        <h3 class="titulo-seccion">
+            Mis Proyectos
+        </h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="./src/img/proyecto1.png" alt="">
+                    <div class="info">
+                        <h4>Descripcion del proyecto</h4>
+                        <p>Diseño Web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section contact-->
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema...." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Su Mensaje...." class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!--Section footer-->
+
+    <section>
+        <footer>
+            <p>Todos los derechos reservados - 2023</p>
+            <div id="redes">
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+        </footer>
+    </section>
+
+    <!--Script-->
+    <script src="./src/js/main.js"></script>
+</body>
+</html>
